@@ -22,9 +22,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-require_once __DIR__ . '/../Soneritics/Cache/CacheAbstract.php';
-require_once __DIR__ . '/../Soneritics/Cache/FileCacheAbstract.php';
-require_once __DIR__ . '/../Soneritics/TextCache.php';
+require_once __DIR__ . '/../Soneritics/Cache/Interfacing/CacheAbstract.php';
+require_once __DIR__ . '/../Soneritics/Cache/Interfacing/FileCacheAbstract.php';
+require_once __DIR__ . '/../Soneritics/Cache/TextCache.php';
 
 use Cache\TextCache;
 
