@@ -1,6 +1,6 @@
 # Cache #
 
-[![Build Status](https://api.travis-ci.org/Soneritics/Cache.svg?branch=master)](https://travis-ci.org/Soneritics/Currency)
+[![Build Status](https://api.travis-ci.org/Soneritics/Cache.svg?branch=master)](https://travis-ci.org/Soneritics/Cache)
 [![Coverage Status](https://coveralls.io/repos/Soneritics/Cache/badge.svg?branch=master)](https://coveralls.io/r/Soneritics/Cache?branch=master)
 ![License](http://img.shields.io/badge/license-MIT-green.svg)
 

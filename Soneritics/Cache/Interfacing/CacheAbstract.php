@@ -28,13 +28,13 @@ abstract class CacheAbstract
 {
     private $cacheExpiration;
 
-    public abstract function set($id, $value);
+    abstract public function set($id, $value);
 
-    public abstract function get($id);
+    abstract public function get($id);
 
-    public abstract function clear($id);
+    abstract public function clear($id);
 
-    public abstract function has($id);
+    abstract public function has($id);
 
     public function touch($id)
     {
