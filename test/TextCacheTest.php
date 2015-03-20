@@ -46,7 +46,7 @@ class TextCacheTest extends PHPUnit_Framework_TestCase
     {
         $cache = $this->getCacheObject();
 
-        foreach ($i = 100; $i <= 300; $i += 100) {
+        for ($i = 100; $i <= 300; $i += 100) {
             $cache->setCacheExpiration($i);
             $this->assertEquals($cache->getCacheExpiration(), $i);
         }
