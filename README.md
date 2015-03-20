@@ -40,5 +40,5 @@ $fileCache = (new FileCache('tmp'))
     ->setCacheExpiration(3600)
     ->set('test', ['test1', 'test2']);
 
-echo print_r($fileCache->get('test'), true);
+var_dump($fileCache->get('test'));
 $fileCache->clear('test');
