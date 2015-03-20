@@ -38,7 +38,7 @@ class TextCacheTest extends PHPUnit_Framework_TestCase
 {
     private function getCacheObject()
     {
-        return new TextCache('tmp')
+        return (new TextCache('tmp'))
             ->setCacheExpiration(3600);
     }
 
