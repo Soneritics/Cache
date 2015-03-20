@@ -6,9 +6,9 @@ php:
 script:
 - vendor/bin/phpcs --standard=PSR1,PSR2 Soneritics/Cache/
 - mkdir -p build/logs
-- vendor/bin/phpunit --coverage-clover build/logs/clover.xml test/
 - mkdir cache
 - chmod 777 cache
+- vendor/bin/phpunit --coverage-clover build/logs/clover.xml test/
 
 after_script:
   - php vendor/bin/coveralls -v
