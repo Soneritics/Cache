@@ -35,7 +35,6 @@ echo $textCache->get('test');
 // sleep(5);
 // $textCache->has('test') === false
 
-
 $fileCache = (new FileCache('tmp'))
     ->setCacheExpiration(3600)
     ->set('test', ['test1', 'test2']);
