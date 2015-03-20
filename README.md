@@ -1,0 +1,2 @@
+# Cache
+Caching mechanism
