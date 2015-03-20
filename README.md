@@ -32,10 +32,9 @@ $textCache = (new TextCache('tmp'))
     ->set('test', 'test');
 
 echo $textCache->get('test');
-
-sleep(5);
+// sleep(5);
 // $textCache->has('test') === false
-$textCache->clear('test');
+
 
 $fileCache = (new FileCache('tmp'))
     ->setCacheExpiration(3600)
