@@ -1,0 +1,14 @@
+install: composer install --prefer-source --dev
+language: php
+php:
+- 5.5
+- 5.6
+script:
+- vendor/bin/phpcs --standard=PSR1,PSR2 Soneritics/Cache/
+- mkdir -p build/logs
+- vendor/bin/phpunit --coverage-clover build/logs/clover.xml test/
+- mkdir cache
+- chmod 777 cache
+
+after_script:
+  - php vendor/bin/coveralls -v

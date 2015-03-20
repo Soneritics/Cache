@@ -1,0 +1,19 @@
+{
+    "name": "soneritics/cache",
+    "type": "library",
+    "description": "Caching mechanism with support for multiple caching types.",
+    "homepage": "https://github.com/Soneritics/Cache",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*",
+        "squizlabs/php_codesniffer": "dev-master",
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {"Cache\\": "Soneritics/Cache/"}
+    }
+}

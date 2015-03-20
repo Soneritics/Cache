@@ -1,11 +1,11 @@
 <?php
-require 'Cache/Abstract/CacheAbstract.php';
-require 'Cache/Abstract/FileCacheAbstract.php';
-require 'Cache/TextCache.php';
-require 'Cache/FileCache.php';
+require '../Soneritics/Cache/Abstract/CacheAbstract.php';
+require '../Soneritics/Cache/Abstract/FileCacheAbstract.php';
+require '../Soneritics/Cache/TextCache.php';
+require '../Soneritics/Cache/FileCache.php';
 
 echo "TEXTCACHE\n";
-$textCache = new TextCache('tmp');
+$textCache = new Cache\TextCache('tmp');
 $textCache->setCacheExpiration(4);
 $textCache->set('test', 'test');
 echo "Cache set\n";
@@ -16,7 +16,7 @@ echo "has cache: " . ($textCache->has('test') ? 'true' : 'false') . "\n\n\n";
 $textCache->clear('test');
 
 echo "FILECACHE\n";
-$fileCache = new FileCache('tmp');
+$fileCache = new Cache\FileCache('tmp');
 $fileCache->setCacheExpiration(4);
 $fileCache->set('test', array('test'));
 echo "Cache set\n";
