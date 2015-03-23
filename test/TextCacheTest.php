@@ -58,12 +58,12 @@ class TextCacheTest extends PHPUnit_Framework_TestCase
         $testValue = 'This is just a string to test for.';
 
         $cache->set('testvalue', $testValue);
-        $this->assertEquals('testvalue', $testValue);
+        $this->assertEquals($cache->get('testvalue'), $testValue);
 
         $cache->set('test-value', $testValue);
-        $this->assertEquals('test-value', $testValue);
+        $this->assertEquals($cache->get('test-value'), $testValue);
 
         $cache->set('test value', $testValue);
-        $this->assertEquals('test value', $testValue);
+        $this->assertEquals($cache->get('test value'), $testValue);
     }
 }
